@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  cache:
+    type: redis
+  redis:
+    enable: true
+    lettuce:
+      pool:
+        enabled: true
+        min-idle: 8
+        max-idle: 16
+        max-active: 16
+
+logging:
+  level:
+    root: INFO
+#    io.lettuce.core.*: DEBUG
+#    org.springframework.data.redis.connection.*: DEBUG
+

@@ -1,0 +1,372 @@
+{
+  "widgets": [
+    {
+      "type": "accountsAndCards",
+      "implementation": {
+        "version": 2,
+        "release": "accountsAndCards:2",
+        "currentScreenName": "mainRedesigned",
+        "category": "Customer products widget",
+        "data": {
+          "name": "accountsAndCards"
+        },
+        "analytics": {
+          "currentScreenName": "mainRedesigned",
+          "category": "Customer products widget"
+        },
+        "widgetVersion": "v1"
+      }
+    },
+    {
+      "type": "advices",
+      "implementation": {
+        "version": 2,
+        "release": "advices:2",
+        "currentScreenName": "mainRedesigned",
+        "data": {
+          "name": "advices"
+        },
+        "widgetVersion": "v1"
+      }
+    },
+    {
+      "type": "badgedButton",
+      "implementation": {
+        "version": 4,
+        "release": "unapprovedOperations:3",
+        "currentScreenName": "mainRedesigned",
+        "data": {
+          "deeplink": "/incomplete_operations?fromCurrent=true",
+          "title": "Неподтверждённые операции",
+          "name": "unapprovedOperations"
+        },
+        "widgetVersion": "v1"
+      }
+    },
+    {
+      "type": "container",
+      "implementation": {
+        "version": 2,
+        "release": "alfaPremium:1",
+        "currentScreenName": "mainRedesigned",
+        "category": "Premium widget",
+        "data": {
+          "title": "Alfa Only",
+          "deeplink": "/alfa_premium_showcase",
+          "name": "alfaPremium"
+        },
+        "widgets": [
+          {
+            "type": "squareCollection",
+            "implementation": {
+              "version": 1,
+              "release": "squareCollectionNonfin:1",
+              "currentScreenName": "mainRedesigned",
+              "data": {
+                "title": "Карусель нефинансовых сервисов",
+                "endpoint": "v1/bonus/NON_FINANCIAL",
+                "name": "squareCollectionNonfin"
+              },
+              "widgetVersion": "v1"
+            }
+          }
+        ],
+        "analytics": {
+          "currentScreenName": "mainRedesigned",
+          "category": "Premium widget"
+        },
+        "widgetVersion": "v1"
+      }
+    },
+    {
+      "type": "button",
+      "implementation": {
+        "version": 4,
+        "release": "investments:2",
+        "currentScreenName": "mainRedesigned",
+        "data": {
+          "deeplink": "/investments?fromCurrent=true",
+          "title": "Инвестиции",
+          "name": "investments"
+        },
+        "widgetVersion": "v1"
+      }
+    },
+    {
+      "type": "container",
+      "implementation": {
+        "version": 2,
+        "release": "popularTransfersContainer:2",
+        "currentScreenName": "mainRedesigned",
+        "data": {
+          "deeplink": "/phone_bank_transfers?fromCurrent=true",
+          "title": "Переводы по номеру телефона",
+          "name": "popularTransfersContainer"
+        },
+        "widgets": [
+          {
+            "type": "popularTransfers",
+            "implementation": {
+              "version": 2,
+              "release": "popularTransfers:2",
+              "currentScreenName": "mainRedesigned",
+              "data": {
+                "name": "popularTransfers"
+              },
+              "widgetVersion": "v1"
+            }
+          }
+        ],
+        "widgetVersion": "v1"
+      }
+    },
+    {
+      "type": "container",
+      "implementation": {
+        "version": 2,
+        "release": "mainPartnersBonusesContainer:1",
+        "currentScreenName": "mainRedesigned",
+        "data": {
+          "isCollapsable": false,
+          "title": "Лучший кэшбэк от партнёров",
+          "isClickable": true,
+          "deeplink": "/webFeature?type=recommendation&url=https%3A%2F%2Fweb-test.alfabank.ru%2Fblank%3FisCategory%3Dtrue%26selectionId%3D1%26selectionTitle%3D%25D0%259B%25D1%2583%25D1%2587%25D1%2588%25D0%25B8%25D0%25B9%2520%25D0%25BA%25D1%258D%25D1%2588%25D0%25B1%25D1%258D%25D0%25BA%2520%25D0%25BE%25D1%2582%2520%25D0%25BF%25D0%25B0%25D1%2580%25D1%2582%25D0%25BD%25D1%2591%25D1%2580%25D0%25BE%25D0%25B2%26type%3DoffersSelection%26sidePanelId%3DPartnerOffers",
+          "name": "MainPartnersBonusesContainer"
+        },
+        "widgets": [
+          {
+            "type": "popularPartnersBonuses",
+            "implementation": {
+              "version": 2,
+              "release": "superPartnersCashback:1",
+              "currentScreenName": "mainRedesigned",
+              "data": {
+                "endpoint": "v1/loyalty-partners/super-cashback-offers?category=1",
+                "name": "superPartnersCashback"
+              },
+              "widgetVersion": "v1"
+            }
+          }
+        ],
+        "widgetVersion": "v1"
+      }
+    },
+    {
+      "type": "container",
+      "implementation": {
+        "version": 2,
+        "release": "bonuses:4",
+        "currentScreenName": "mainRedesigned",
+        "data": {
+          "title": "Альфа-Выгодно",
+          "isClickable": false,
+          "name": "bonuses"
+        },
+        "widgets": [
+          {
+            "type": "squareCollection",
+            "implementation": {
+              "version": 1,
+              "release": "squareCollectionBonusesCashback:1",
+              "currentScreenName": "mainRedesigned",
+              "data": {
+                "title": "Карусель кэшбэк и привелегии (без нефин. сервисов)",
+                "endpoint": "v1/bonus/CASHBACK",
+                "name": "squareCollectionBonusesCashback"
+              },
+              "widgetVersion": "v1"
+            }
+          }
+        ],
+        "widgetVersion": "v1"
+      }
+    },
+    {
+      "type": "container",
+      "implementation": {
+        "version": 2,
+        "release": "userProfileReferral:1",
+        "currentScreenName": "mainRedesigned",
+        "category": "Referrals widget",
+        "data": {
+          "title": "Деньги вам и друзьям",
+          "deeplink": "/referral_showcase",
+          "name": "UserProfileReferral"
+        },
+        "widgets": [
+          {
+            "type": "referralBonus",
+            "implementation": {
+              "version": 1,
+              "release": "referralBonus:1",
+              "currentScreenName": "mainRedesigned",
+              "category": "Referrals widget",
+              "data": {
+                "title": "Реферальная программа. Виджет точки входа",
+                "iconName": "",
+                "name": "referralBonus"
+              },
+              "analytics": {
+                "currentScreenName": "mainRedesigned",
+                "category": "Referrals widget"
+              },
+              "widgetVersion": "v1"
+            }
+          }
+        ],
+        "analytics": {
+          "currentScreenName": "mainRedesigned",
+          "category": "Referrals widget"
+        },
+        "widgetVersion": "v1"
+      }
+    },
+    {
+      "type": "container",
+      "implementation": {
+        "version": 2,
+        "release": "currencyExchange:2",
+        "currentScreenName": "mainRedesigned",
+        "data": {
+          "title": "Обмен валюты",
+          "deeplink": "/currency_rates?fromCurrent=true",
+          "name": "currencyExchange"
+        },
+        "widgetVersion": "v1"
+      }
+    },
+    {
+      "type": "container",
+      "implementation": {
+        "version": 2,
+        "release": "atms:1",
+        "currentScreenName": "mainRedesigned",
+        "data": {
+          "deeplink": "/atmsAndBranches?fromCurrent=true",
+          "title": "На карте",
+          "name": "atms"
+        },
+        "widgets": [
+          {
+            "type": "atms",
+            "implementation": {
+              "version": 1,
+              "release": "atmsCarousel:1",
+              "currentScreenName": "mainRedesigned",
+              "data": {
+                "deeplink": "/atmsAndBranches?fromCurrent=true",
+                "name": "atmsCarousel"
+              },
+              "widgetVersion": "v1"
+            }
+          }
+        ],
+        "widgetVersion": "v1"
+      }
+    },
+    {
+      "type": "button",
+      "implementation": {
+        "version": 4,
+        "release": "fastRechargeViaCC:1",
+        "currentScreenName": "mainRedesigned",
+        "data": {
+          "title": "Быстрое пополнение",
+          "deeplink": "/card_to_card?senderCardsSort=EXT_FIRST&recipientCardsSort=OWN_FIRST&fromCurrent=true",
+          "name": "fastRechargeViaCC"
+        },
+        "widgetVersion": "v1"
+      }
+    },
+    {
+      "type": "badgedButton",
+      "implementation": {
+        "version": 6,
+        "release": "invoice:3",
+        "currentScreenName": "mainRedesigned",
+        "data": {
+          "name": "invoice",
+          "endpoint": "v1/invoice/subscriptions/bills/count",
+          "deeplink": "/autosubscription?fromCurrent=true",
+          "title": "Счета на оплату"
+        },
+        "widgetVersion": "v1"
+      }
+    },
+    {
+      "type": "button",
+      "implementation": {
+        "version": 4,
+        "release": "qrPayment:3",
+        "currentScreenName": "mainRedesigned",
+        "category": "Qa cats widget",
+        "data": {
+          "title": "Оплата по QR",
+          "deeplink": "/qr_payment?fromCurrent=true",
+          "name": "qrPayment"
+        },
+        "analytics": {
+          "currentScreenName": "mainRedesigned",
+          "category": "Qa cats widget"
+        },
+        "widgetVersion": "v1"
+      }
+    },
+    {
+      "type": "button",
+      "implementation": {
+        "version": 4,
+        "release": "templates:3",
+        "currentScreenName": "mainRedesigned",
+        "data": {
+          "deeplink": "/my_payments?fromCurrent=true",
+          "title": "Шаблоны и автоплатежи",
+          "name": "templates"
+        },
+        "widgetVersion": "v1"
+      }
+    },
+    {
+      "type": "button",
+      "implementation": {
+        "version": 4,
+        "release": "incomeAndExpense:2",
+        "currentScreenName": "mainRedesigned",
+        "data": {
+          "deeplink": "/pfm?fromCurrent=true&page=all",
+          "title": "Расходы и доходы",
+          "name": "incomeAndExpense"
+        },
+        "widgetVersion": "v1"
+      }
+    },
+    {
+      "type": "button",
+      "implementation": {
+        "version": 4,
+        "release": "assetsOverview:2",
+        "currentScreenName": "mainRedesigned",
+        "data": {
+          "title": "Обзор активов",
+          "name": "assetsOverview",
+          "deeplink": "/assets_overview?fromCurrent=true"
+        },
+        "widgetVersion": "v1"
+      }
+    },
+    {
+      "type": "button",
+      "implementation": {
+        "version": 4,
+        "release": "addExpense:2",
+        "currentScreenName": "mainRedesigned",
+        "data": {
+          "deeplink": "/add_expense?fromCurrent=true",
+          "title": "Записать наличные расходы",
+          "name": "addExpense"
+        },
+        "widgetVersion": "v1"
+      }
+    }
+  ]
+}
